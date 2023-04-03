@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/books.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    margin: 200px auto;
+    width: 30%;
+    gap: 50px;
+}
+
+
+input {
+    border: 1px solid #475bd0;
+    border-radius: 4px;
+    padding: 13px 0 12px 12px;
+    background-color: transparent;
+    outline: none;
+}
+
+#username {
+    margin-top: 50px;
+}
+
+#password {
+    margin: 20px 0 43px 0;
+}
+
+.btn-login {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #0D75FF;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 13px;
+    outline: none;
+    border: 1px solid #475bd0;
+}

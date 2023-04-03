@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Rubik" sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* header start */
+.header__top {
+    padding: 10px 0 11px 0;
+}
+
+.header__top--wrapper {
+    gap: 56px;
+}
+
+.header__input {
+    max-width: 670px;
+    background: #F8FAFD;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background-image: url("../images/search-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 15px;
+    padding-left: 16px;
+}
+
+::placeholder {
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.24);
+    padding-left: 35px;
+}
+
+.logout {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #0D75FF;
+    border-radius: 4px;
+    padding: 10px 23px;
+    margin-left: 15px;
+}
+
+/* header bottom */
+.header__bottom {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid #E3E6EB;
+    border-top: 1px solid #E3E6EB;
+    padding: 11px 0 11px 0;
+}
+
+.sort {
+    background: #A6B0C3;
+    border-radius: 4px;
+    padding: 10px 13px;
+    margin-left: 558px;
+}
+
+.calendar {
+    margin-right: 8px;
+}
+
+/* header end */
+
+/* aside start */
+
+.aside-wrapper {
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+    padding-top: 25px;
+    padding-right: 25px;
+    height: 100%;
+    max-width: 330px;
+}
+
+.aside-card {
+    /* width: 218px; */
+    background: #F8FAFD;
+    border-radius: 4px;
+    padding: 15px 10px;
+}
+
+/* aside end */
+
+
+/* SECTION */
+.hero__wrapper {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 33px;
+}
+
+/* card style start */
+.card {
+    padding: 13px 15px 13px 18px;
+    min-height: 550px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 19px;
+}
+
+.card-img-wrapper {
+    padding: 18px 28px 18px 20px;
+    background: #F8FAFD;
+    border-radius: 5px;
+}
+
+.card-img {
+    height: 230px;
+}
+
+
+.btn-more {
+    background: rgba(13, 117, 255, 0.05);
+    font-weight: 500;
+    color: #0D75FF;
+}
+
+.btn-read {
+    margin-top: 5px;
+    background: #75828A;
+}
+
+.btn-read:hover {
+    background-color: #0D75FF;
+}
+
+/* card style end */
+
+
+/* modal */
+
+#modal-back {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+}
+.back-hidden{
+    display: none;
+}
+
+.modal-content {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 40%;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    animation: content 2s;
+    z-index: 9999;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes content {
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+.modal-nav {
+    background: #F8FAFD;
+    padding: 22px 34px;
+}
+
+.modal-img {
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.modal-fund {
+    background-color: #fff;
+    padding: 0 35px 0 46px;
+}
+
+.modal-description {
+    font-size: 13px;
+    line-height: 170.3%;
+    color: #58667E;
+}
+
+.modal-fund h6 {
+    font-size: 14px;
+    line-height: 17px;
+    color: #222531;
+}
+
+.modal-fund h6 span {
+    display: inline-block;
+    max-width: 400px;
+    line-height: 17px;
+    color: #0D75FF;
+    background: rgba(13, 117, 255, 0.09);
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+
+.modal-footer {
+    padding: 15px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    padding-right: 20px;
+    /* margin-top: 30px; */
+}
+
+#modal-read {
+    padding: 9px 38px;
+}
